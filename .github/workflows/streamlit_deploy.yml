@@ -51,8 +51,6 @@ jobs:
       - name: Check Streamlit App Execution
         run: |
           streamlit run app.py > app.log 2>&1 &  # Start the Streamlit app in the background
-          sleep 20  # Allow the app to start and run for a while
-          kill $!  # Kill the Streamlit process
       
       - name: Upload Streamlit logs
         uses: actions/upload-artifact@v2
