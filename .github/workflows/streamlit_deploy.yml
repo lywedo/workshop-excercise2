@@ -92,9 +92,7 @@ jobs:
           python-version: 3.8
 
       - name: Deploy to Render.com
-        env:
-          deploy_url: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
-        run: |
-          curl "$deploy_url"
-
-
+        uses: ttskch/render-deploy@v1.0.0
+        with:
+          service-id: ${{ secrets.SERVICEID }}
+          api-key: ${{ secrets.RENDER }}
