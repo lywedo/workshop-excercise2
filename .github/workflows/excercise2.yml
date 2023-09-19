@@ -1,14 +1,9 @@
 name: Streamlit App CI/CD
 
 on:
-  [push]
-
-
+  push
 
 jobs:
-
-########## check code linting ######## 
-
   lint:
     name: Linting
     runs-on: ubuntu-latest
