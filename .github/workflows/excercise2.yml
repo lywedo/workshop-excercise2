@@ -47,7 +47,10 @@ jobs:
           fi
 
       - name: Test Streamlit app
-        run: streamlit run app.py
+        run: |
+              streamlit run app.py
+              sleep 5
+              pkill -f streamlit
 
   ########## Deploying to Web server ######## 
   deploy:
