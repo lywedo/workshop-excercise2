@@ -1,5 +1,9 @@
 name: Streamlit App CI/CD
 
+on:
+  push:
+    branches:
+      - deploy
 
 jobs:
   lint:
