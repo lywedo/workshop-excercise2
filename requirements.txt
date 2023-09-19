@@ -1,5 +1,4 @@
-Streamlit
-NumPy
-Matplotlib
-scikit-learn
-Pandas
+streamlit
+pandas
+flake8
+plotly
